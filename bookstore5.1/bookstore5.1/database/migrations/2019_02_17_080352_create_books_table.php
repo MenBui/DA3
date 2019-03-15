@@ -17,18 +17,18 @@ class CreateBooksTable extends Migration
             $table->string('name');
             $table->integer('price');
             $table->integer('author_id')->unsigned();
-            $table->foreign('author_id')->reference('id')->on('authors');
+            $table->foreign('author_id')->references('id')->on('authors')->onDelete('cascade');
             $table->integer('nxb_id')->unsigned();
-            $table->foreign('nxb_id')->reference('id')->on('NXB');
+            $table->foreign('nxb_id')->references('id')->on('NXB')->onDelete('cascade');
             $table->integer('NamXB');
             $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->reference('id')->on('categorys');
+            $table->foreign('category_id')->references('id')->on('categorys')->onDelete('cascade');
             $table->string('description');
             $table->integer('url_id_Books')->unsigned();
-            $table->foreign('url_id_Books')->reference('id')->on('URL_Books');
-            $table->integer('view');
+            $table->foreign('url_id_Books')->references('id')->on('URL_Books')->onDelete('cascade');
+            $table->integer('views');
             $table->integer('count');
-            $table->string('image');
+            $table->string('images');
             $table->timestamps();
         });
     }

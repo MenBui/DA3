@@ -15,9 +15,9 @@ class CreateBooksOrderTable extends Migration
         Schema::create('Books_order', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id')->unsigned();
-            $table->foreign('order_id')->reference('id')->on('Orders');
+            $table->foreign('order_id')->references('id')->on('Orders')->onDelete('cascade');
             $table->integer('Books_id')->unsigned();
-            $table->foreign('Books_id')->reference('id')->on('books');
+            $table->foreign('Books_id')->references('id')->on('books')->onDelete('cascade');
             $table->integer('Count');
             $table->timestamps();
         });
