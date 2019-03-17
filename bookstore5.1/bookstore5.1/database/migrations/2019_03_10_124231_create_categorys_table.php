@@ -14,6 +14,7 @@ class CreateCategorysTable extends Migration
     {
         Schema::create('categorys', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('parent_id');
             $table->string('name');
             $table->integer('url_id')->unsigned();
             $table->foreign('url_id')->reference('id')->on('URL_categorys');

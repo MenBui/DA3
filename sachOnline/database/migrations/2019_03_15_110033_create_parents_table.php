@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateURLCategorysTable extends Migration
+class CreateParentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,8 @@ class CreateURLCategorysTable extends Migration
      */
     public function up()
     {
-        Schema::create('URL_categorys', function (Blueprint $table) {
+        Schema::create('parents', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('url');
-            $table->string('title');
-            $table->string('keyword_SEO');
-            $table->string('description_SEO');
-            $table->string('image_SEO');
             $table->timestamps();
         });
     }
@@ -30,6 +25,6 @@ class CreateURLCategorysTable extends Migration
      */
     public function down()
     {
-        Schema::drop('URL_categorys');
+        Schema::drop('parents');
     }
 }
