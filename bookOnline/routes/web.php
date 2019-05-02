@@ -50,11 +50,6 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 
 
 
-	Route::get('editCategory/{id}/{parent_id}',['as'=>'editCategory','uses'=>'AdminController@editCategory']);
-	Route::get('editUser/{id}',['as'=>'editUser','uses'=>'AdminController@editUser']);
-	Route::get('editNxb/{id}',['as'=>'editNxb','uses'=>'AdminController@editNxb']);
-	Route::get('editAuthor/{id}',['as'=>'editAuthor','uses'=>'AdminController@editAuthor']);
-
 
 	
 	Route::post('post-add-user',['as'=>'postAddUser','uses'=>'AdminController@postAddUser']);
@@ -67,13 +62,25 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 
 
 
+
+	Route::get('editCategory/{id}/{parent_id}',['as'=>'editCategory','uses'=>'AdminController@editCategory']);
+	Route::get('editUser/{id}',['as'=>'editUser','uses'=>'AdminController@editUser']);
+	Route::get('editNxb/{id}',['as'=>'editNxb','uses'=>'AdminController@editNxb']);
+	Route::get('editAuthor/{id}',['as'=>'editAuthor','uses'=>'AdminController@editAuthor']);
+	Route::get('editProduct/{id}',['as'=>'editProduct','uses'=>'AdminController@editProduct']);
+
+
+
 	Route::post('postEditCategory/{id}',['as'=>'postEditCategory','uses'=>'AdminController@postEditCategory']);
 	Route::post('postEditUser/{id}',['as'=>'postEditUser','uses'=>'AdminController@postEditUser']);
 	Route::post('postEditNxb/{id}',['as'=>'postEditNxb','uses'=>'AdminController@postEditNxb']);
 	Route::post('postEditAuthor/{id}',['as'=>'postEditAuthor','uses'=>'AdminController@postEditAuthor']);
+	Route::post('postEditProduct/{id}',['as'=>'postEditProduct','uses'=>'AdminController@postEditProduct']);
 
 
     
 
    	Route::get('deleteAuthor/{id}',['as'=>'deleteAuthor','uses'=>'AdminController@deleteAuthor']);
+   	Route::get('deleteNxb/{id}',['as'=>'deleteNxb','uses'=>'AdminController@deleteNxb']);
+   	Route::get('deleteProduct/{id}',['as'=>'deleteProduct','uses'=>'AdminController@deleteProduct']);
 });

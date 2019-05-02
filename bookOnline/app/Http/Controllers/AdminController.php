@@ -245,6 +245,7 @@ class AdminController extends Controller
         echo "Thêm thành công!";
     }
 
+
     public function postEditCategory(editCategoryRequest $request,$id){
         $cate =new Category;
         $cate->editCategory($request,$id);
@@ -295,6 +296,19 @@ class AdminController extends Controller
     }
 
 
+    public function postEditProduct(editProductRequest $request,$id){
+        $book = new Book;
+        $book->editProduct($request,$id);
+        return View('auth/listProduct')->with(['flash_level'=>'success','flash_message'=>'Sửa thông tin sách thành công']);
+    }
+    public function editProduct($id){
+        $book = Book::where('id',$id)->get()->first();
+        $books = Book::select()->get();
+        return View('admin.edit-product',['book'=>$book,'books'=>$books]);
+
+    }
+
+
 
 
     public function deleteAuthor($id){
@@ -302,6 +316,18 @@ class AdminController extends Controller
         $author->deleteAuthor($id);
         return redirect('auth/listAuthor')->with(['flash_level'=>'success','flash_message'=>'Xóa tác giả thành công']);
     }
+    public function deleteNxb($id){
+        $nxb = new Nxb;
+        $nxb->deleteNxb($id);
+        return redirect('auth/listNxb')->with(['flash_level'=>'success','flash_message'=>'Xóa nhà xuất bản thành công']);
+    }
+    public function deleteProduct($id){
+        $book = new Book;
+        $book->deleteProduct($id);
+        return redirect('auth/listProduct')->with(['flash_level'=>'success','flash_message'=>'Xóa sách thành công']);
+    }
+
+
 
 
 }

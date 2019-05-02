@@ -49,7 +49,7 @@
 							<td>{{$stt++}}</td>
 							<td>{{$nxb->name}}</td>
 							<td class="jsgrid-cell jsgrid-control-field jsgrid-align-center " style="width: 50px;">
-								<a href=""><button class="jsgrid-button jsgrid-edit-button ti-trash" type="button" title="Delete" ></button></a>
+								<a href="{{URL::route('deleteNxb',[$nxb->id])}}" onclick="return confirmDelete('Bạn có chắc chắn muốn xóa nhà xuất bản này không?')"><button class="jsgrid-button jsgrid-edit-button ti-trash" type="button" title="Delete" ></button></a>
 								<a href="{{URL::route('editNxb',[$nxb->id])}}"><button class="jsgrid-button jsgrid-delete-button ti-pencil-alt" type="button" title="Edit"></button></a>
 							</td>
 						</tr>

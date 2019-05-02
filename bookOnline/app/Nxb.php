@@ -13,4 +13,8 @@ class Nxb extends Model
         $nxb->name = $request->name;
         $nxb->save(); 
     }
+    public function deleteNxb($id){
+    	$nxb = Nxb::where('id',$id)->get()->first();
+    	$nxb->delete();
+    }
 }
