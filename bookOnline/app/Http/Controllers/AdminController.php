@@ -25,6 +25,7 @@ use App\Http\Requests\editCategoryRequest;
 use App\Http\Requests\editUserRequest;
 use App\Http\Requests\editNxbRequest;
 use App\Http\Requests\editAuthorRequest;
+use App\Http\Requests\editProductRequest;
 use Hash;
 
 class AdminController extends Controller
@@ -129,12 +130,7 @@ class AdminController extends Controller
         $categorys = Category::select()->get();
         return view('admin.add-category',['categorys'=>$categorys]);
     }
-    public function addUrlCategory(){
-        return view('admin.add-url-category');
-    }
-    public function addUrlBook(){
-        return view('admin.add-url-book');
-    }
+
 
    
    
@@ -321,6 +317,17 @@ class AdminController extends Controller
         $nxb->deleteNxb($id);
         return redirect('auth/listNxb')->with(['flash_level'=>'success','flash_message'=>'Xóa nhà xuất bản thành công']);
     }
+    public function deleteUser($id){
+        $us = new User;
+        $us->deleteUser($id);
+        return redirect('auth/listUsers')->with(['flash_level'=>'success','flash_message'=>'Xóa User thành công']);
+    }
+    public function deleteCategory($id){
+        $category = new Category;
+        $category->deleteCategory($id);
+        return redirect('auth/listCategory')->with(['flash_level'=>'success','flash_message'=>'Xóa danh mục thành công']);
+    }
+
     public function deleteProduct($id){
         $book = new Book;
         $book->deleteProduct($id);

@@ -54,7 +54,7 @@
 							<td>{{$stt++}}</td>
 							<td>{{$cate->name}}</td>
 							<td class="jsgrid-cell jsgrid-control-field jsgrid-align-center " style="width: 50px;">
-								<a href=""><button class="jsgrid-button jsgrid-edit-button ti-trash" type="button" title="Delete" ></button></a>
+								<a href="{{URL::route('deleteCategory',[$cate->id])}}" onclick="return confirmDelete('Bạn có chắc chắn muốn xóa danh mục này không?')"><button class="jsgrid-button jsgrid-edit-button ti-trash" type="button" title="Delete" ></button></a>
 								<a href="{{URL::route('editCategory',[$cate->id,$cate->parents_id])}}"><button class="jsgrid-button jsgrid-delete-button ti-pencil-alt" type="button" title="Edit"></button></a>
 							</td>
 						</tr>

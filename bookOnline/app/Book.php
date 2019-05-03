@@ -34,6 +34,7 @@ class Book extends Model
     public function editProduct($request,$id) {
         $books = Book::where('id',$id)->get()->first();
         $url_books = Url_Book::where('id',$id)->get()->first();
+        $author->name = $request->name;
         $url_books->url = $request->url;
         $url_books->title = $request->title;
         $url_books->keyword_seo = $request->keyword_seo;

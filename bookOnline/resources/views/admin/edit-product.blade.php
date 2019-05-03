@@ -34,37 +34,38 @@
 		    	@endif
 			<h5>Form controls</h5>
 			<p class="font-90 text-muted mb-1">Bootstrap provides several form control styles, layout options, and custom components for creating a wide variety of forms.</p>
-			<form action="{{URL::route('postEditProduct',[$books->id])}}" method="POST">
+			<form action="{{URL::route('postEditProduct',[$book->id])}}" method="POST">
 				<input type="hidden" name="_token" value="{{csrf_token()}}">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tên sách</label>
-					<input type="text" class="form-control" name="name" placeholder="Tên sách" value="{{$books->name}}">
-					
+					<input type="text" class="form-control" name="name" placeholder="Tên sách" value="{{$book->name}}">	
 				</div>
+				@foreach($url_books as $url_book)
 				<div class="form-group">
 					<label for="exampleInputEmail1">Link</label>
-					<input type="text" class="form-control" name="url" placeholder="Link" value="{{$url_books->url}}">
+					<input type="text" class="form-control" name="url" placeholder="Link" value="{{$url_book->url}}">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tiêu đề</label>
-					<input type="text" class="form-control" name="title" placeholder="Tiêu đề" value="{{$url_books->title}}">					
+					<input type="text" class="form-control" name="title" placeholder="Tiêu đề" value="{{$url_book->title}}">					
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Keyword Seo</label>
-					<input type="text" class="form-control" name="keyword_seo" placeholder="Keyword Seo" value="{{$url_books->keyword_seo}}">					
+					<input type="text" class="form-control" name="keyword_seo" placeholder="Keyword Seo" value="{{$url_book->keyword_seo}}">					
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Description Seo</label>
-					<input type="text" class="form-control" name="description_seo" placeholder="Description Seo" value="{{$url_books->description_seo}}">					
+					<input type="text" class="form-control" name="description_seo" placeholder="Description Seo" value="{{$url_book->description_seo}}">					
 				</div>
 				<div class="form-group">
 					<label for="exampleInputFile">Image Seo</label>
-					<input type="file" class="form-control-file" name="image_seo" value="{{$url_books->image_seo}}}">
+					<input type="file" class="form-control-file" name="image_seo" value="{{$url_book->image_seo}}}">
 								
 				</div>
+				@endforeach
 				<div class="form-group">
 					<label for="exampleInputEmail1">Giá</label>
-					<input type="text" class="form-control" name="price" placeholder="Giá" value="{{$books->price}}">
+					<input type="text" class="form-control" name="price" placeholder="Giá" value="{{$book->price}}">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tác giả</label>
@@ -84,7 +85,7 @@
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Năm xuất bản</label>
-					<input type="text" class="form-control" name="namxb" placeholder="Năm xuất bản" value="{{$books->namxb}}">
+					<input type="text" class="form-control" name="namxb" placeholder="Năm xuất bản" value="{{$book->namxb}}">
 				</div>
 
 				<div class="form-group">
@@ -111,11 +112,11 @@
 
 				<div class="form-group">
 					<label for="exampleInputEmail1">Số lượng</label>
-					<input type="text" class="form-control" name="count" placeholder="Số lượng" value="{{$books->count}}">
+					<input type="text" class="form-control" name="count" placeholder="Số lượng" value="{{$book->count}}">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputFile">Ảnh đại diện</label>
-					<input type="file" class="form-control-file" name="images" value="{{$books->images}}">
+					<input type="file" class="form-control-file" name="images" value="{{$book->images}}">
 								
 				</div>
 				<button type="submit" class="btn btn-primary">Submit</button>

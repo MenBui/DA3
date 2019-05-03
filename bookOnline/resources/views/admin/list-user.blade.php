@@ -31,6 +31,11 @@
 				<li class="breadcrumb-item active">Data Tables</li>
 			</ol>
 			<div class="box box-block bg-white">
+				@if( Session::has('flash_message'))
+	                <div class="alert alert-{{ Session::get('flash_level')}}">
+	                    {{ Session::get('flash_message')}}
+	                </div>
+	            @endif
 				<h5 class="mb-1">Exporting Table Data</h5>
 				<table class="table table-striped table-bordered dataTable" id="table-2">
 					<thead>
@@ -62,7 +67,7 @@
 							<td>{{$us->date}}</td>
 							<td>{{$us->sex}}</td>
 							<td class="jsgrid-cell jsgrid-control-field jsgrid-align-center " style="width: 50px;">
-								<a href=""><button class="jsgrid-button jsgrid-edit-button ti-trash" type="button" title="Delete" ></button></a>
+								<a href="{{URL::route('deleteUser',[$us->id])}}" onclick="return confirmDelete('Bạn có chắc chắn muốn xóa User này không?')"><button class="jsgrid-button jsgrid-edit-button ti-trash" type="button" title="Delete" ></button></a>
 								<a href="{{URL::route('editUser',[$us->id])}}"><button class="jsgrid-button jsgrid-delete-button ti-pencil-alt" type="button" title="Edit"></button></a>
 							</td>
 						</tr>

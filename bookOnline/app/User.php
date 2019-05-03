@@ -51,4 +51,8 @@ class User extends Model implements AuthenticatableContract,
         $us->role = $request->role;
         $us->save();
     }
+     public function deleteUser($id){
+        $us = User::where('id',$id)->get()->first();
+        $us->delete();
+    }
 }

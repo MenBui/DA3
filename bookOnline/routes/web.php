@@ -34,8 +34,6 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 	Route::get('listAuthor',['as'=>'listAuthor','uses'=>'AdminController@listAuthor']);
 	Route::get('listProduct',['as'=>'listProduct','uses'=>'AdminController@listProduct']);
 	Route::get('listCategory',['as'=>'listCategory','uses'=>'AdminController@listCategory']);
-	Route::get('listUrlBook',['as'=>'listUrlBook','uses'=>'AdminController@listUrlBook']);
-	Route::get('listUrlCategory',['as'=>'listUrlCategory','uses'=>'AdminController@listUrlCategory']);
 	Route::get('listOrder',['as'=>'listOrder','uses'=>'AdminController@listOrder']);
 	Route::get('listNxb',['as'=>'listNxb','uses'=>'AdminController@listNxb']);
 
@@ -45,8 +43,6 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 	Route::get('add-product',['as'=>'add-product','uses'=>'AdminController@addProduct']);
 	Route::get('add-nxb',['as'=>'add-nxb','uses'=>'AdminController@addNxb']);
 	Route::get('add-category',['as'=>'add-category','uses'=>'AdminController@addCategory']);
-	Route::get('add-url-category',['as'=>'add-url-category','uses'=>'AdminController@addUrlCategory']);
-	Route::get('add-url-book',['as'=>'add-url-book','uses'=>'AdminController@addUrlBook']);
 
 
 
@@ -57,9 +53,6 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 	Route::post('post-add-product',['as'=>'postAddProduct','uses'=>'AdminController@postAddProduct']);
 	Route::post('post-add-nxb',['as'=>'postAddNxb','uses'=>'AdminController@postAddNxb']);
 	Route::post('post-add-category',['as'=>'postAddCategory','uses'=>'AdminController@postAddCategory']);
-	Route::post('post-add-url-category',['as'=>'postAddUrlCategory','uses'=>'AdminController@postAddUrlCategory']);
-	Route::post('post-add-url-book',['as'=>'postAddUrlBook','uses'=>'AdminController@postAddUrlBook']);
-
 
 
 
@@ -82,5 +75,7 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 
    	Route::get('deleteAuthor/{id}',['as'=>'deleteAuthor','uses'=>'AdminController@deleteAuthor']);
    	Route::get('deleteNxb/{id}',['as'=>'deleteNxb','uses'=>'AdminController@deleteNxb']);
+   	Route::get('deleteUser/{id}',['as'=>'deleteUser','uses'=>'AdminContrroller@deleteUser']);
+   	Route::get('deleteCategory/{id}',['as'=>'deleteCategory','uses'=>'AdminController@deleteCategory']);
    	Route::get('deleteProduct/{id}',['as'=>'deleteProduct','uses'=>'AdminController@deleteProduct']);
 });

@@ -22,9 +22,11 @@ class Category extends Model
         $url_cate->description_seo=$request->description_seo;
         $url_cate->image_seo=$request->image_seo;
         $url_cate->save();
-    	
 
-
+    }
+     public function deleteCategory($id){
+        $category = Category::where('id',$id)->get()->first();
+        $category->delete();
     }
 }
 
