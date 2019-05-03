@@ -40,7 +40,7 @@
 					<label for="exampleInputEmail1">Tên sách</label>
 					<input type="text" class="form-control" name="name" placeholder="Tên sách" value="{{$book->name}}">	
 				</div>
-				@foreach($url_books as $url_book)
+				
 				<div class="form-group">
 					<label for="exampleInputEmail1">Link</label>
 					<input type="text" class="form-control" name="url" placeholder="Link" value="{{$url_book->url}}">
@@ -62,7 +62,7 @@
 					<input type="file" class="form-control-file" name="image_seo" value="{{$url_book->image_seo}}}">
 								
 				</div>
-				@endforeach
+				
 				<div class="form-group">
 					<label for="exampleInputEmail1">Giá</label>
 					<input type="text" class="form-control" name="price" placeholder="Giá" value="{{$book->price}}">
@@ -70,16 +70,24 @@
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tác giả</label>
 					<select class="form-control" id="exampleSelect1" name="author_id">
+						<option value="{{$author->id}}">{{$author->name}}</option>
 						@foreach($authors as $au)
-						<option value="{{$au->id}}">{{$au->name}}</option>
+							@if($au->id == $author->id)
+							@else
+								<option value="{{$au->id}}">{{$au->name}}</option>
+							@endif
 						@endforeach
 					</select>
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Nhà xuất bản</label>
 					<select class="form-control" id="exampleSelect1" name="nxb_id">
-						@foreach($nxbs as $nxb)
 						<option value="{{$nxb->id}}">{{$nxb->name}}</option>
+						@foreach($nxbs as $nxb0)
+						    @if($nxb0->id == $nxb->id)
+						    @else
+						        <option value="{{$nxb0->id}}">{{$nxb0->name}}</option>
+						    @endif    
 						@endforeach
 					</select>
 				</div>
@@ -91,14 +99,18 @@
 				<div class="form-group">
 					<label for="exampleInputEmail1">Danh mục</label>
 					<select class="form-control" id="exampleSelect1" name="category_id">
-						@foreach($categorys as $cate)
 						<option value="{{$cate->id}}">{{$cate->name}}</option>
+						@foreach($categorys as $categ)
+						@if($categ->id == $cate->id)
+						@else
+						     <option value="{{$categ->id}}">{{$categ->name}}</option>
+						@endif     
 						@endforeach
 					</select>
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Thông tin sách</label>
-					<textarea name="description1" class="form-control"></textarea>
+					<textarea name="description1" class="form-control">{{$book->description1}}</textarea>
 					<script type="text/javascript">
 				      var editor = CKEDITOR.replace('description1',{
 				       language:'vi',

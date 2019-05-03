@@ -75,7 +75,7 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 
    	Route::get('deleteAuthor/{id}',['as'=>'deleteAuthor','uses'=>'AdminController@deleteAuthor']);
    	Route::get('deleteNxb/{id}',['as'=>'deleteNxb','uses'=>'AdminController@deleteNxb']);
-   	Route::get('deleteUser/{id}',['as'=>'deleteUser','uses'=>'AdminContrroller@deleteUser']);
+   	Route::get('deleteUser/{id}',['as'=>'deleteUser','uses'=>'AdminController@deleteUser']);
    	Route::get('deleteCategory/{id}',['as'=>'deleteCategory','uses'=>'AdminController@deleteCategory']);
    	Route::get('deleteProduct/{id}',['as'=>'deleteProduct','uses'=>'AdminController@deleteProduct']);
 });

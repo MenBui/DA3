@@ -33,8 +33,7 @@ class Book extends Model
     }
     public function editProduct($request,$id) {
         $books = Book::where('id',$id)->get()->first();
-        $url_books = Url_Book::where('id',$id)->get()->first();
-        $author->name = $request->name;
+        $url_books = Url_Book::where('id',$books->url_books_id)->get()->first(); // lỗi này vừa nói xong, $url_book phải tìm where('id', $books->id)
         $url_books->url = $request->url;
         $url_books->title = $request->title;
         $url_books->keyword_seo = $request->keyword_seo;
@@ -51,7 +50,7 @@ class Book extends Model
         $books->url_books_id = $url_books->id;
         $books->count = $request->count;
         $books->images = $request->images;
-        $books->views = 0;
+         // khi thêm mới sách thì mới cho view = 0, sửa thì không sửa view
         $books->save();
     }    
     public function deleteProduct($id){
