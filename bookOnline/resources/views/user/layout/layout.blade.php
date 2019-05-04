@@ -11,7 +11,7 @@
 	<link rel="pingback" href="http://mauweb.monamedia.net/lazada/xmlrpc.php" />
 
 	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Lazada &#8211; Một trang web mới sử dụng WordPress</title>
+<title>HUBook </title>
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Lazada &raquo;" href="http://mauweb.monamedia.net/lazada/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Lazada &raquo;" href="http://mauweb.monamedia.net/lazada/comments/feed/" />
@@ -592,11 +592,6 @@ li.html .row, li.html form, li.html select, li.html input {
 
 <!-- FOOTER 2 -->
 
-	
-	
-	@include('User.layout.footer-01')
-	
-	
 	@include('User.layout.footer-02')
 	
 
@@ -606,7 +601,7 @@ li.html .row, li.html form, li.html select, li.html input {
     
     <div class="footer-primary pull-left">
             <div class="copyright-footer">
-        <p>&copy; All rights reserved. Thiết kế website <img src="http://mona-media.com/logo.png" style="width:20px;vertical-align:sub;" alt="MonaMedia"> <a href="https://mona.media/" title="Mona Media"><strong>Mona Media</strong></a></p>      </div>
+        <p>&copy; <img src="http://mona-media.com/logo.png" style="width:20px;vertical-align:sub;" alt="MonaMedia"> <a href="{{URL::route('index')}}" title="Mona Media"><strong>HUBook</strong></a></p>      </div>
           </div><!-- .left -->
   </div><!-- .container -->
 </div><!-- .absolute-footer -->

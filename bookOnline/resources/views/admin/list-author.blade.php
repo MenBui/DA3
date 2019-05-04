@@ -42,7 +42,7 @@
 						<tr>
 							<th>STT</th>
 							<th>Họ Tên</th>
-							<th>abc</th>
+							<th>Thêm</th>
 						</tr>
 					</thead>
 					<tbody>

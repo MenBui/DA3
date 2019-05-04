@@ -1,3 +1,4 @@
+
 <header id="header" class="header has-sticky sticky-jump">
    <div class="header-wrapper">
 	<div id="top-bar" class="header-top hide-for-sticky nav-dark">
@@ -14,34 +15,30 @@
 
       <div class="flex-col hide-for-medium flex-right">
          <ul class="nav top-bar-nav nav-right nav-small  nav-">
-              <li class="html custom html_topbar_left"><p class="topbarlink"><a href="http://mauweb.monamedia.net/lazada/tai-app-mona/" style="color:#ff7941">Tải App Mona</a></p></li><li class="html custom html_topbar_right"><p class="topbarlink"><a href="http://mauweb.monamedia.net/lazada/cong-tac-cung-mona/" style="color:#37cfdd">Cộng tác cùng Mona</a></p></li><li class="html custom html_top_right_text"><p class="topbarlink"><a href="#">Chăm sóc khách hàng</a></p></li><li class="html custom html_nav_position_text_top"><p class="topbarlink"><a href="#">Kiểm tra đơn hàng</a></p></li><li class="account-item has-icon
-    "
->
+              <li class="html custom html_topbar_left">
+                <p class="topbarlink"></p>
+              </li>
+              <li class="account-item has-icon">
 
-<a href="http://mauweb.monamedia.net/lazada/tai-khoan/"
-    class="nav-top-link nav-top-not-logged-in "
-    data-open="#login-form-popup"  >
-    <span>
-    Đăng nhập     / Đăng ký  </span>
-  
-</a><!-- .account-login-link -->
+              <a href="http://mauweb.monamedia.net/lazada/tai-khoan/"
+                  class="nav-top-link nav-top-not-logged-in "
+                  data-open="#login-form-popup"  >
+                  <span>
+                  Đăng nhập     / Đăng ký  </span>
+                
+              </a><!-- .account-login-link -->
 
 
 
-</li>
-<li class="has-dropdown header-language-dropdown">
-	<a href="#">
-		Languages				<i class="icon-angle-down" ></i>	</a>
-	<ul class="nav-dropdown nav-dropdown-simple">
-				<li><a>You need Polylang or WPML plugin for this to work. You can remove it from Theme Options.</a></li>	</ul>
-</li>
+              </li>
+                
           </ul>
       </div><!-- .flex-col right -->
 
-            <div class="flex-col show-for-medium flex-grow">
+            <!-- <div class="flex-col show-for-medium flex-grow">
           <ul class="nav nav-center nav-small mobile-nav  nav-">
               <li class="html custom html_topbar_left"><p class="topbarlink"><a href="http://mauweb.monamedia.net/lazada/tai-app-mona/" style="color:#ff7941">Tải App Mona</a></p></li>          </ul>
-      </div>
+      </div> -->
       
     </div><!-- .flex-row -->
 </div><!-- #header-top -->
@@ -51,8 +48,10 @@
           <!-- Logo -->
           <div id="logo" class="flex-col logo">
             <!-- Header logo -->
-<a href="http://mauweb.monamedia.net/lazada/" title="Lazada - Một trang web mới sử dụng WordPress" rel="home">
-    <img width="124" height="75" src="http://mauweb.monamedia.net/lazada/wp-content/uploads/2017/11/logo-ecommerce-1.svg" class="header_logo header-logo" alt="Lazada"/><img  width="124" height="75" src="http://mauweb.monamedia.net/lazada/wp-content/uploads/2017/11/logo-ecommerce-1.svg" class="header-logo-dark" alt="Lazada"/></a>
+<a href="{{URL::route('index')}}" rel="home">
+    <!-- <img width="124" height="75" src="http://mauweb.monamedia.net/lazada/wp-content/uploads/2017/11/logo-ecommerce-1.svg" class="header_logo header-logo" alt="Lazada"/><img  width="124" height="75" src="http://mauweb.monamedia.net/lazada/wp-content/uploads/2017/11/logo-ecommerce-1.svg" class="header-logo-dark" alt="Lazada"/> -->
+      <font color="white">HUBook</font>
+    </a>
           </div>
 
           <!-- Mobile Left Elements -->
@@ -75,7 +74,7 @@
 		<div class="searchform-wrapper ux-search-box relative form- is-normal"><form method="get" class="searchform" action="http://mauweb.monamedia.net/lazada/" role="search">
 		<div class="flex-row relative">
 									<div class="flex-col flex-grow">
-			  <input type="search" class="search-field mb-0" name="s" value="" placeholder="Tìm sản phẩm, thương hiệu và tên shop" />
+			  <input type="search" class="search-field mb-0" name="s" value="" placeholder="Tìm kiếm sách, tác giả và nhà xuất bản" />
 		    <input type="hidden" name="post_type" value="product" />
         			</div><!-- .flex-col -->
 			<div class="flex-col">

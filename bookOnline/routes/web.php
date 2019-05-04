@@ -14,10 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('index',['as'=>'index','uses'=>'AdminController@index']);
 
 
-Route::get('indexUser',['as'=>'indexUser','uses'=>'UserController@index']);
+Route::get('index',['as'=>'index','uses'=>'UserController@index']);
 Route::get('categories',['as'=>'categories','uses'=>'UserController@categories']);
 
 

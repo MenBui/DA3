@@ -322,14 +322,7 @@
 					<div class="container-fluid">
 						<div class="row text-xs-center">
 							<div class="col-sm-4 text-sm-left mb-0-5 mb-sm-0">
-								2019 © HUBook
-							</div>
-							<div class="col-sm-8 text-sm-right">
-								<ul class="nav nav-inline l-h-2">
-									<li class="nav-item"><a class="nav-link text-black" href="index.html#">Privacy</a></li>
-									<li class="nav-item"><a class="nav-link text-black" href="index.html#">Terms</a></li>
-									<li class="nav-item"><a class="nav-link text-black" href="index.html#">Help</a></li>
-								</ul>
+								2019 © <a href="{{URL::route('index')}}">HUBook</a>
 							</div>
 						</div>
 					</div>
