@@ -585,15 +585,12 @@ li.html .row, li.html form, li.html select, li.html input {
 
 		
 	@yield('content')
-<footer id="footer" class="footer-wrapper">
+<footer id="footer" class="footer-wrapper" style="">
 	
 <!-- FOOTER 1 -->
 
 
 <!-- FOOTER 2 -->
-
-	@include('User.layout.footer-02')
-	
 
 <div class="absolute-footer light medium-text-center text-center">
   <div class="container clearfix">

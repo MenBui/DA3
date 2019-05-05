@@ -19,7 +19,7 @@
 		<ol class="breadcrumb no-bg mb-1">
 			<li class="breadcrumb-item"><a href="forms-basic.html#">Trang chủ</a></li>
 			<li class="breadcrumb-item"><a href="forms-basic.html#">Danh sách tác giả</a></li>
-			<li class="breadcrumb-item active">Thêm tác giả</li>
+			<li class="breadcrumb-item active">Sửa thông tin tác giả</li>
 		</ol>
 		<div class="box box-block bg-white">
 			@if( Session::has('flash_message'))

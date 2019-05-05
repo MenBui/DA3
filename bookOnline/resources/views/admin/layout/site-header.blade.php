@@ -1,7 +1,7 @@
 <div class="site-header">
 	<nav class="navbar navbar-light">
 		<div class="navbar-left">
-			<a class="navbar-brand" href="{{URL::route('index')}}">
+			<a class="navbar-brand" href="{{URL::route('authIndex')}}">
 				<div class="logo">
 					<font color="white">HUBook</font>
 				</div>

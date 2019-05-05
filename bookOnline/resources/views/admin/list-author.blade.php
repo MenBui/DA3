@@ -26,9 +26,9 @@
 		<div class="container-fluid">
 			<h4>Data Tables</h4>
 			<ol class="breadcrumb no-bg mb-1">
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Home</a></li>
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Tables</a></li>
-				<li class="breadcrumb-item active">Data Tables</li>
+				<li class="breadcrumb-item"><a href="tables-datatable.html#">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="{{URL::route('listAuthor')}}">Danh sách tác giả</a></li>
+				<li class="breadcrumb-item active">Danh sách tác giả</li>
 			</ol>
 			<div class="box box-block bg-white">
 				@if( Session::has('flash_message'))
@@ -42,7 +42,7 @@
 						<tr>
 							<th>STT</th>
 							<th>Họ Tên</th>
-							<th>Thêm</th>
+							<th><a href="{{URL::route('add-author')}}">Thêm</a></th>
 						</tr>
 					</thead>
 					<tbody>

@@ -24,11 +24,12 @@ class editAuthorRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'=>'required'
         ];
     }
     public function message(){
         return[
+            'name.required'=>'Vui lòng nhập tên tác giả'
         ];
     }
 }
