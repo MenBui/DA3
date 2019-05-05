@@ -5,7 +5,7 @@
 	<div class="page-title-inner flex-row  medium-flex-wrap container">
 	  <div class="flex-col flex-grow medium-text-center">
 	  	 	 <div class="is-large">
-  <nav class="woocommerce-breadcrumb breadcrumbs"><a href="http://mauweb.monamedia.net/lazada">Trang chủ</a> <span class="divider">&#47;</span> Bách hóa online</nav></div>
+  <nav class="woocommerce-breadcrumb breadcrumbs"><a href="http://mauweb.monamedia.net/lazada">Trang chủ</a> <span class="divider">&#47;</span> Sách Thiếu Nhi</nav></div>
 <div class="category-filtering category-filter-row show-for-medium">
 	<a href="#" data-open="#shop-sidebar" data-visible-after="true" data-pos="left" class="filter-button uppercase plain">
 		<i class="icon-menu"></i>

@@ -6,13 +6,14 @@
 		<div class="section-content relative">
 			
 
-<div class="gap-element" style="display:block; height:auto; padding-top:30px" class="clearfix"></div>
+			<div class="gap-element" style="display:block; height:auto; padding-top:30px" class="clearfix"></div>
 
-<div class="row row-collapse"  id="row-251633430">
+			<di  class="row row-collapse"  id="row-251633430">
 
-<div class="col medium-3 small-6 large-3"  ><div class="col-inner"  >
+			   <div class="col medium-3 small-6 large-3"  >
+			   	<div class="col-inner"  >
 </svg>
-					</div>
+			</div>
 				</div>
 			</div>
 				<div class="icon-box-text last-reset">

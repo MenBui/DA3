@@ -187,7 +187,7 @@ class AdminController extends Controller
         $authors = new Author;
         $authors->name = $request->name;
         $authors->save();
-        echo "Thêm thành công!";
+        return redirect('auth/listAuthor')->with(['flash_level'=>'success','flash_message'=>'Thêm tác giả thành công']);
     }
     public function postAddProduct(addProductRequest $request){
         $books = new Book;
@@ -219,26 +219,6 @@ class AdminController extends Controller
             $categorys->save();
         }
         return redirect('auth/listCategory')->with(['flash_level'=>'success','flash_message'=>'Thêm danh mục thành công']);
-    }
-    public function postAddUrlCategory(addUrlCategoryRequest $request){
-        $url_categorys = new Url_Category;
-        $url_categorys->url = $request->url;
-        $url_categorys->title = $request->title;
-        $url_categorys->keyword_seo = $request->keyword_seo;
-        $url_categorys->description_seo = $request->description_seo;
-        $url_categorys->image_seo = $request->image_seo;
-        $url_categorys->save();
-        echo "Thêm thành công!";
-    }
-    public function postAddUrlBook(addUrlBookRequest $request){
-        $url_books = new Url_Book;
-        $url_books->url = $request->url;
-        $url_books->title = $request->title;
-        $url_books->keyword_seo = $request->keyword_seo;
-        $url_books->description_seo = $request->description_seo;
-        $url_books->image_seo = $request->image_seo;
-        $url_books->save();
-        echo "Thêm thành công!";
     }
 
 
@@ -298,7 +278,7 @@ class AdminController extends Controller
         return redirect('auth/listProduct')->with(['flash_level'=>'success','flash_message'=>'Sửa thông tin sách thành công']);
     }
     public function editProduct($id){
-        //$id truyền vào là của quyển sách ù tìm url_book bằng id của quyển sách mà ra được à
+       
         $book = Book::where('id',$id)->get()->first();
         $books = Book::select()->get();
         $url_book = Url_Book::where('id',$book->url_books_id)->get()->first();
@@ -308,7 +288,6 @@ class AdminController extends Controller
         $nxbs = Nxb::select()->get();
         $cate = Category::where('id',$book->category_id)->get()->first();
         $categorys = Category::select()->get();
-        //chỗ này tìm url_book thì phải tìm url_book có id bằng $book->url_book_id
         return View('admin.edit-product',['book'=>$book,'books'=>$books,'url_book'=>$url_book,'author'=>$author,'authors'=>$authors,'nxb'=>$nxb,'nxbs'=>$nxbs,'cate'=>$cate, 'categorys'=>$categorys]);
 
     }

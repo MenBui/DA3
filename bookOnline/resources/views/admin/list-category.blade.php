@@ -42,7 +42,7 @@
 						<tr>
 							<th>STT</th>
 							<th>Thể loại</th>
-							<th>abc</th>
+							<th><a href="{{URL::route('add-category')}}">Thêm</a></th>
 						</tr>
 					</thead>
 					<tbody>

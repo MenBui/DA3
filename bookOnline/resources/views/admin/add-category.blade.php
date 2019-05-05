@@ -54,7 +54,7 @@
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">title</label>
-					<input type="text" class="form-control" name="title" placeholder="url_id" value="{{old('title')}}">
+					<input type="text" class="form-control" name="title" placeholder="Title" value="{{old('title')}}">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Seo Keyword</label>
