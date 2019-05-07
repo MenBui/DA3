@@ -13,7 +13,7 @@ class AuthorTableSeeder extends Seeder
     public function run()
     {
         $author = new Author;
-        $author->name = 'Con heo ù';
+        $author->name = 'Tô Hoài';
         $author->save();
     }
 }

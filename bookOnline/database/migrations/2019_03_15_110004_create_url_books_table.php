@@ -14,7 +14,7 @@ class CreateUrlBooksTable extends Migration
     {
         Schema::create('url_books', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('url');
+            $table->string('url')->unique();
             $table->string('title');
             $table->string('keyword_seo');
             $table->string('description_seo');

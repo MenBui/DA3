@@ -26,9 +26,9 @@
 		<div class="container-fluid">
 			<h4>Data Tables</h4>
 			<ol class="breadcrumb no-bg mb-1">
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Home</a></li>
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Tables</a></li>
-				<li class="breadcrumb-item active">Data Tables</li>
+				<li class="breadcrumb-item"><a href="{{URL::route('authIndex')}}">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="{{URL::route('listUsers')}}">Danh sách Admin</a></li>
+				<li class="breadcrumb-item active">Danh sách Admin</li>
 			</ol>
 			<div class="box box-block bg-white">
 				@if( Session::has('flash_message'))
@@ -48,7 +48,7 @@
 							<th>CMND</th>
 							<th>Ngày sinh</th>
 							<th>Giới tính</th>
-							<th>abc</th>
+							<th><a href="{{URL::route('add-user')}}">Thêm</a></th>
 						</tr>
 					</thead>
 					<tbody>

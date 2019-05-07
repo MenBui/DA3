@@ -22,7 +22,7 @@
 					</a>
 				</li>
 				<li class="with-sub">
-					<a href="index.html#" class="waves-effect  waves-light">
+					<a href="{{URL::route('listUsers')}}" class="waves-effect  waves-light">
 						<span class="s-icon"><i class="ti-menu-alt"></i></span>
 						<span class="s-text">Admin</span>
 					</a>

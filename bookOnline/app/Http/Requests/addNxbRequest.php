@@ -29,7 +29,8 @@ class addNxbRequest extends Request
     }
     public function messages(){
         return [
-            'name.required'=>'Vui lòng nhập nhà xuất bản'
+            'name.required'=>'Vui lòng nhập tên nhà xuất bản'
+            
         ];
     }
 }

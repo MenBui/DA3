@@ -19,8 +19,6 @@ use App\Http\Requests\addAuthorRequest;
 use App\Http\Requests\addProductRequest;
 use App\Http\Requests\addNxbRequest;
 use App\Http\Requests\addCategoryRequest;
-use App\Http\Requests\addUrlCategoryRequest;
-use App\Http\Requests\addUrlBookRequest;
 use App\Http\Requests\editCategoryRequest;
 use App\Http\Requests\editUserRequest;
 use App\Http\Requests\editNxbRequest;

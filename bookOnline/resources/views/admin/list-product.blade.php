@@ -26,9 +26,9 @@
 		<div class="container-fluid">
 			<h4>Data Tables</h4>
 			<ol class="breadcrumb no-bg mb-1">
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Home</a></li>
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Tables</a></li>
-				<li class="breadcrumb-item active">Data Tables</li>
+				<li class="breadcrumb-item"><a href="{{URL::route('authIndex')}}">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="{{URL::route('listProduct')}}">Danh sách sản phẩm</a></li>
+				<li class="breadcrumb-item active">Danh sách sản phẩm</li>
 			</ol>
 			<div class="box box-block bg-white">
 				@if( Session::has('flash_message'))
@@ -46,7 +46,7 @@
 							<th>Năm xuất bản</th>
 							<th>Thông tin sách</th>
 							<th>Số lượng</th>
-							<th>abc</th>
+							<th><a href="{{URL::route('add-product')}}">Thêm</a></th>
 						</tr>
 					</thead>
 					<tbody>

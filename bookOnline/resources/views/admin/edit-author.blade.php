@@ -17,8 +17,8 @@
 	<div class="container-fluid">
 		<h4>Basic Form Elements</h4>
 		<ol class="breadcrumb no-bg mb-1">
-			<li class="breadcrumb-item"><a href="forms-basic.html#">Trang chủ</a></li>
-			<li class="breadcrumb-item"><a href="forms-basic.html#">Danh sách tác giả</a></li>
+			<li class="breadcrumb-item"><a href="{{URL::route('authIndex')}}">Trang chủ</a></li>
+			<li class="breadcrumb-item"><a href="{{URL::route('listAuthor')}}">Danh sách tác giả</a></li>
 			<li class="breadcrumb-item active">Sửa thông tin tác giả</li>
 		</ol>
 		<div class="box box-block bg-white">

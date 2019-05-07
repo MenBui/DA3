@@ -24,11 +24,12 @@ class editNxbRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'=>'required'
         ];
     }
-    public function message(){
+    public function messages(){
         return[
+            'name.required'=>'Vui lòng nhập tên nhà xuất bản'
         ];
     }
 }

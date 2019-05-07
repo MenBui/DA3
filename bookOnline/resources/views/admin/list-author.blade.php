@@ -26,7 +26,7 @@
 		<div class="container-fluid">
 			<h4>Data Tables</h4>
 			<ol class="breadcrumb no-bg mb-1">
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="{{URL::route('authIndex')}}">Trang chủ</a></li>
 				<li class="breadcrumb-item"><a href="{{URL::route('listAuthor')}}">Danh sách tác giả</a></li>
 				<li class="breadcrumb-item active">Danh sách tác giả</li>
 			</ol>

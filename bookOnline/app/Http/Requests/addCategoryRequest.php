@@ -24,12 +24,24 @@ class addCategoryRequest extends Request
     public function rules()
     {
         return [
-            'name'=>'required'
+            'name'=>'required',
+            //'parent_id'=>'required'
+            'url'=>'required|unique:categorys,url',
+            'title'=>'required',
+            'keyword_seo'=>'required',
+            'description_seo'=>'required',
+            'image_seo'=>'required'
         ];
     }
     public function messages(){
         return [
-            'name.required'=>'Vui lòng nhập lại tên danh mục sách'
+            'name.required'=>'Vui lòng nhập lại tên danh mục sách',
+            'url.required'=>'Vui lòng nhập link',
+            'url.unique'=>'Url này đã được sử dụng',
+            'keyword_seo.required'=>'Vui lòng nhập keyword_seo',
+            'description_seo.required'=>'Vui lòng nhập description_seo',
+            'image_seo.required'=>'Vui lòng thêm ảnh'
+
         ];
     }
 }

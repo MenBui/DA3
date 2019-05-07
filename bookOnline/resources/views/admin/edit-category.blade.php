@@ -17,9 +17,9 @@
 	<div class="container-fluid">
 		<h4>Basic Form Elements</h4>
 		<ol class="breadcrumb no-bg mb-1">
-			<li class="breadcrumb-item"><a href="forms-basic.html#">Trang chủ</a></li>
-			<li class="breadcrumb-item"><a href="forms-basic.html#">Danh sách nhà xuất bản</a></li>
-			<li class="breadcrumb-item active">Thêm danh mục sách</li>
+			<li class="breadcrumb-item"><a href="{{URL::route('authIndex')}}">Trang chủ</a></li>
+			<li class="breadcrumb-item"><a href="{{URL::route('listCategory')}}">Danh mục sách</a></li>
+			<li class="breadcrumb-item active">Sửa danh mục sách</li>
 		</ol>
 		<div class="box box-block bg-white">
 			@if( Session::has('flash_message'))

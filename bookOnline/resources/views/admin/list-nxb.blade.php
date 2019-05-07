@@ -26,9 +26,9 @@
 		<div class="container-fluid">
 			<h4>Data Tables</h4>
 			<ol class="breadcrumb no-bg mb-1">
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Home</a></li>
-				<li class="breadcrumb-item"><a href="tables-datatable.html#">Tables</a></li>
-				<li class="breadcrumb-item active">Data Tables</li>
+				<li class="breadcrumb-item"><a href="{{URL::route('authIndex')}}">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="{{URL::route('listNxb')}}">Danh sách nhà xuất bản</a></li>
+				<li class="breadcrumb-item active">Danh sách nhà xuất bản</li>
 			</ol>
 			<div class="box box-block bg-white">
 				<h5 class="mb-1">Exporting Table Data</h5>

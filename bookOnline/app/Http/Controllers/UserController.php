@@ -87,4 +87,8 @@ class UserController extends Controller
     public function categories(){
         return view('User.categories');
     }
+
+    public function book(){
+        return view('User.book');
+    }
 }
