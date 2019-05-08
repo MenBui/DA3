@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::get('index',['as'=>'index','uses'=>'UserController@index']);
 Route::get('categories',['as'=>'categories','uses'=>'UserController@categories']);
-Route::get('book',['as'=>'newbook','uses'=>'UserController@book']);
+Route::get('book',['as'=>'book','uses'=>'UserController@book']);
 
 
 Route::get('signin',['as'=>'signin','uses'=>'Auth\LoginController@signin']);

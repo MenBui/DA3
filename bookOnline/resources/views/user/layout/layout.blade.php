@@ -12,6 +12,7 @@
 
 	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
 <title>HUBook </title>
+<link rel="shortcut icon" type="image/png" href="/images/icons/logo.png">
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Lazada &raquo;" href="http://mauweb.monamedia.net/lazada/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Lazada &raquo;" href="http://mauweb.monamedia.net/lazada/comments/feed/" />

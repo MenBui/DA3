@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use DB;
 
 class UserController extends Controller
 {
@@ -85,7 +86,8 @@ class UserController extends Controller
         //
     }
     public function categories(){
-        return view('User.categories');
+        $books = DB::table('books')->select('id','name','price','images')->orderBy('id','DESC')->skip(0)->take(3)->get();
+        return view('User.categories',compact('books'));
     }
 
     public function book(){

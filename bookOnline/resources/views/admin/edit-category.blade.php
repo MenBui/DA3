@@ -60,7 +60,7 @@
 
 				<div class="form-group">
 					<label for="exampleInputEmail1">Link</label>
-					<input type="text" class="form-control" name="url" placeholder="url_id" value="{{$url_category->url}}">
+					<input type="text" class="form-control" name="url" placeholder="url" value="{{$url_category->url}}">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">title</label>

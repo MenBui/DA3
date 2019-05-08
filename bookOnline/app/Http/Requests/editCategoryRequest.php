@@ -25,7 +25,7 @@ class editCategoryRequest extends FormRequest
     {
         return [
             'name'=>'required',
-            //'parent_id'=>'required'
+            'parent_id'=>'required'
             'url'=>'required|unique:categorys,url',
             'title'=>'required',
             'keyword_seo'=>'required',

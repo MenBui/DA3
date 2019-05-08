@@ -25,7 +25,7 @@ class addProductRequest extends FormRequest
     {
         return [
             'name'=>'required',
-            'url'=>'required|unique:books,url',
+            //'url'=>'required|unique:books,url',
             'title'=>'required',
             'keyword_seo'=>'required',
             'description_seo'=>'required',
@@ -40,7 +40,7 @@ class addProductRequest extends FormRequest
     public function messages(){
          return[
             'name.required'=>'Vui lòng nhập tên sách',
-            'url.required'=>'Vui lòng nhập tên link',
+            //'url.required'=>'Vui lòng nhập tên link',
             'title.required'=>'Vui lòng nhập tiêu đề',
             'keyword_seo.required'=>'Vui lòng nhập keyword_seo',
             'description_seo.required'=>'Vui lòng nhập description_seo',

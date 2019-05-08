@@ -37,7 +37,7 @@
 						<tr>
 							<th>STT</th>
 							<th>Nhà xuất bản</th>
-							<th>abc</th>
+							<th><a href="{{URL::route('add-nxb')}}">Thêm</a></th>
 						</tr>
 					</thead>
 					<tbody>

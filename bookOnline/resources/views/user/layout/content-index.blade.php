@@ -705,7 +705,7 @@
               <a href="http://mauweb.monamedia.net/lazada/danh-muc/o-to-xe-may-xe-dap/">                <div class="box box-category has-hover box-normal ">
                 <div class="box-image" style="width:50%;">
                   <div class="" >
-                  <img src="http://mauweb.monamedia.net/lazada/wp-content/uploads/2017/11/motorcycle.png" alt="Ô tô - Xe máy - Xe đạp" width="300" height="300" />                                                      </div>
+                  <img src="" alt="Ô tô - Xe máy - Xe đạp" width="300" height="300" />                                                      </div>
                 </div><!-- box-image -->
                 <div class="box-text text-center" >
                   <div class="box-text-inner">
@@ -719,10 +719,10 @@
             </div><!-- .col -->
                 <div class="product-category col" >
             <div class="col-inner">
-              <a href="http://mauweb.monamedia.net/lazada/danh-muc/nha-sach-online/">                <div class="box box-category has-hover box-normal ">
+              <a href="">                <div class="box box-category has-hover box-normal ">
                 <div class="box-image" style="width:50%;">
                   <div class="" >
-                  <img src="http://mauweb.monamedia.net/lazada/wp-content/uploads/2017/11/library.png" alt="Nhà sách online" width="300" height="300" />                                                      </div>
+                  <img src="" alt="Nhà sách online" width="300" height="300" />                                                      </div>
                 </div><!-- box-image -->
                 <div class="box-text text-center" >
                   <div class="box-text-inner">
@@ -739,7 +739,7 @@
               <a href="http://mauweb.monamedia.net/lazada/danh-muc/do-choi/">                <div class="box box-category has-hover box-normal ">
                 <div class="box-image" style="width:50%;">
                   <div class="" >
-                  <img src="http://mauweb.monamedia.net/lazada/wp-content/uploads/2017/11/car.png" alt="Đồ chơi" width="300" height="300" />                                                      </div>
+                  <img src=" alt="Đồ chơi" width="300" height="300" />                                                      </div>
                 </div><!-- box-image -->
                 <div class="box-text text-center" >
                   <div class="box-text-inner">

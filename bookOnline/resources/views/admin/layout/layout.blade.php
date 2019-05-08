@@ -10,6 +10,7 @@
 
 		<!-- Title -->
 		<title>HUBook</title>
+		<link rel="shortcut icon" type="image/png" href="/images/icons/logo.png">
 		<script type="text/javascript" src="{{asset('ckeditor/ckeditor.js')}}"></script>
 		<script type="text/javascript" src="{{asset('ckfinder/ckfinder.js')}}"></script>
 

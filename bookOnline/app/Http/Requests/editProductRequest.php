@@ -41,6 +41,7 @@ class editProductRequest extends FormRequest
         return[
             'name.required'=>'Vui lòng nhập tên sách',
             'url.required'=>'Vui lòng nhập tên link',
+            'url.unique'=>'Url đã tồn tại',
             'title.required'=>'Vui lòng nhập tiêu đề',
             'keyword_seo.required'=>'Vui lòng nhập keyword_seo',
             'description_seo.required'=>'Vui lòng nhập description_seo',
