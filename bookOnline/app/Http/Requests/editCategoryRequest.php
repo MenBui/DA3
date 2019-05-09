@@ -25,8 +25,9 @@ class editCategoryRequest extends FormRequest
     {
         return [
             'name'=>'required',
-            'parent_id'=>'required'
-            'url'=>'required|unique:categorys,url',
+            //'parent_id'=>'required'
+            'url'=>'required|unique:url_categorys,url'.$this->id,
+            'url'=>'required|unique:url_books,url',
             'title'=>'required',
             'keyword_seo'=>'required',
             'description_seo'=>'required',
@@ -36,8 +37,8 @@ class editCategoryRequest extends FormRequest
     public function messages(){
         return [
             'name.required'=>'Vui lòng nhập lại tên danh mục sách',
-            'url.required'=>'Vui lòng nhập link',
-            'url.unique'=>'Url này đã được sử dụng',
+            //'url.required'=>'Vui lòng nhập link',
+            //'url.unique'=>'Url này đã được sử dụng',
             'keyword_seo.required'=>'Vui lòng nhập keyword_seo',
             'description_seo.required'=>'Vui lòng nhập description_seo',
             'image_seo.required'=>'Vui lòng thêm ảnh'

@@ -26,7 +26,9 @@ class Category extends Model
     }
      public function deleteCategory($id){
         $category = Category::where('id',$id)->get()->first();
+        $url_cate = Url_Category::where('id',$category->url_id)->get()->first();
         $category->delete();
+        $url_cate->delete();
     }
 }
 

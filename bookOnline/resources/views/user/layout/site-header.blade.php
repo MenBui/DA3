@@ -159,7 +159,7 @@
             <!-- Header divider -->
       <div class="container"><div class="top-divider full-width"></div></div>
       </div><!-- .header-main -->
-@include('User.layout.menu')
+@include('User.layout.menu1')
       <!-- .header-bottom -->
 
 <div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div><!-- .header-bg-container -->   </div><!-- header-wrapper-->

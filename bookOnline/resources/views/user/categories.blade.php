@@ -37,7 +37,7 @@
 <main id="main" class="">
 <div class="row category-page-row">
 
-		@include('User.layout.site-bar')
+		@include('User.layout.site-bar1')
 
 		<div class="col large-9">
 		<div class="shop-container">
@@ -50,19 +50,20 @@
 			<div class="products row row-small large-columns-4 medium-columns-3 small-columns-2 has-shadow row-box-shadow-1">
 				
 				
-					
+@foreach($books as $bk)					
 <div class="product-small col has-hover post-424 product type-product status-publish has-post-thumbnail product_cat-bach-hoa-online product_cat-do-hop-dong-goi first instock shipping-taxable purchasable product-type-simple">
 	<div class="col-inner">
 	
 <div class="badge-container absolute left top z-1"></div>
 
 	<div class="product-small box ">
-		@foreach($books as $bk)
+		
 		<div class="box-image">
 			<div class="image-fade_in_back">
 				<a href="{{URL::route('book')}}">
+					<img width="200" height="200" src="{{asset('images/icons/'.$bk->images)}}" class="" alt="" srcset="" sizes="(max-width: 200px) 100vw, 200px" />	
 					<img width="350" height="350" src="" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" srcset="" sizes="(max-width: 200px) 100vw, 200px" />
-					<img width="200" height="200" src="{{asset('images/icons/'.$bk->images)}}" class="" alt="" srcset="" sizes="(max-width: 200px) 100vw, 200px" />				
+								
 				</a>
 			</div>
 			<div class="image-tools is-small top right show-on-hover">
@@ -79,17 +80,18 @@
 			<span class="price"><span class="woocommerce-Price-amount amount">{{$bk->price}}<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></span>
 		    </div>		
 		</div>
-		@endforeach<!-- box-text -->
-			</div>
+		<!-- box-text -->
+	</div>
+
 <!-- box -->
-		</div><!-- .col-inner -->
+</div><!-- .col-inner -->
 </div><!-- col -->
-			
-			</div><!-- row -->
+@endforeach			
+</div><!-- row -->
 			
 		
-		</div><!-- shop container -->
-		</div>
+</div><!-- shop container -->
+</div>
 </div>
 
 </main><!-- #main -->

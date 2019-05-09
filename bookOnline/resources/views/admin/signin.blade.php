@@ -10,6 +10,7 @@
 
 		<!-- Title -->
 		<title>HUBook</title>
+		<link rel="shortcut icon" type="image/png" href="/images/icons/logo.png">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="{{asset('vendor/bootstrap4/css/bootstrap.min.css')}}">
